@@ -1,0 +1,244 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS Styles */
+
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: Arial, Helvetica, monospace, sans-serif;
+    font-size: 16px;
+}
+
+header, ul, .footer-items, main {
+    display: flex;
+}
+
+header, .footer-items {
+    justify-content: space-between;
+}
+
+header {
+    height: 30px;
+    padding: 20px 33px;
+}
+
+header, header ul {
+    align-items: center;
+}
+
+header ul li {
+    padding-left: 20px;
+}
+
+ul li:first-child {
+    padding-left: 0;
+}
+
+header ul li a {
+    font-size: 14px;
+    caret-color: rgba(0, 0, 0);
+    opacity: .75;
+}
+
+.fa-th {
+    color: #000;
+    opacity: .85;
+    font-size: 20px;
+}
+
+.profile-ico a {
+    opacity: 1;
+}
+
+.profile-ico img {
+    border-radius: 50%;
+    height: 36px;
+}
+
+/* Main content */
+
+main {
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.search-box {
+    text-align: center;
+    width: 580px;
+    margin-bottom: 150px;
+    padding-bottom: 90px;
+}
+
+.gl-logo {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.search-wrapper {
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.search-wrapper, .footer-items, .footer-country {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    height: 80%;
+    width: 80%;
+}
+
+.search-icon {
+    width: 50px;
+    color: #9aa0a6;
+}
+
+.search-box button {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    font-size: 16px;
+    margin: 25px 0 30px;
+    color: #3c4043;
+}
+
+.search-box button:hover {
+    color: #202124;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.available-language {
+    font-size: 13px;
+}
+
+.available-language a {
+    color: blue;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-country {
+    border-top: 2px solid #dadce0;
+    border-bottom: 2px solid #dadce0;
+    font-size: 16.5px;
+}
+
+.footer-country, .footer-items li a {
+    color: rgba(0, 0, 0, .54);
+}
+
+.footer-items, .footer-country {
+    height: 45px;
+}
+
+.footer-items, .footer-country {
+    padding: 0 33px;
+}
+
+footer ul li {
+    padding-left: 31px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .search-box {
+        padding: 90px 0 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-items {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .search-box {
+        width: 80%;
+        padding: 90px 0 0;
+    }
+}
+
+@media (max-width: 610px) {
+    .gl-logo {
+        height: 70px;
+    }
+    .search-box button {
+        margin: 0;
+    }
+    .available-language {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        display: none;
+    }
+}
